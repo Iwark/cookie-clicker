@@ -11,6 +11,7 @@ class CreateUsers < ActiveRecord::Migration
       t.integer :cookie, default: 0
       t.integer :grandma, default: 0
       t.integer :farm, default: 0
+      t.string :token
 
       t.timestamps
     end

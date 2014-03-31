@@ -13,6 +13,7 @@
     "create-user-controller.md",
     "edit-user-controller.md",
     "edit-application-controller.md",
+    "edit-user-model.md",
     "edit-routes.md",
     "create-js.md",
     "confirm-app.md",

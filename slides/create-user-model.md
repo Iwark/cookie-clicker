@@ -4,7 +4,7 @@
 
 ```
 # (ctrl + Cで一度サーバーを終了して、)
-$ rails generate model user name:string cookie:integer grandma:integer farm:integer # モデルの作成
+$ rails generate model user name:string cookie:integer grandma:integer farm:integer token:string # モデルの作成
 ```
 
 <br />
@@ -13,3 +13,4 @@ $ rails generate model user name:string cookie:integer grandma:integer farm:inte
 * cookie: クッキーの数
 * grandma: アイテム「おばあちゃん」の数
 * farm: アイテム「工場」の数
+* token: ログインに使用する文字列

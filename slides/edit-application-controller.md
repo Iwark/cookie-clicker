@@ -15,10 +15,10 @@ class ApplicationController < ActionController::Base
 
   private
   def login_user
-    @user ||= User.find(session[:user_id]) if session[:user_id].present?
+    @user ||= User.find_by(token: cookies.permanent[:token]) if cookies.permanent[:token].present?
     if @user.nil?
       @user = User.create!
-      session[:user_id] = @user.id
+      cookies.permanent[:token] = @user.token
     end
   end
 end
